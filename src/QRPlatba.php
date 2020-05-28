@@ -145,6 +145,20 @@ class QRPlatba
     }
 
     /**
+     * Nastavení čísla účtu ve formátu IBAN.
+     *
+     * @param $account
+     *
+     * @return $this
+     */
+    public function setAccountIban($account)
+    {
+        $this->keys['ACC'] = $account;
+
+        return $this;
+    }
+	
+    /**
      * Nastavení částky.
      *
      * @param $amount
